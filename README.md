@@ -1,1 +1,1 @@
-# JavaPractice
+Все задания (JAVA-классы с названием Practice) находятся в ветке master.
