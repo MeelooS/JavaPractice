@@ -1,3 +1,5 @@
+package day2;
+
 import java.util.Scanner;
 
 public class Practice2 {
@@ -8,6 +10,7 @@ public class Practice2 {
         //Условия: если этажей 1-4 - “Малоэтажный дом”, 5-8 - “Среднеэтажный дом”, 9 и более- “Многоэтажный дом”.
         // Так же, необходимо учесть что может быть введено отрицательное значение, в таком случае сообщить
         // “Ошибка ввода”.
+        System.out.println("Задание 1");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите кол-во этажей: ");
         int s = scanner.nextInt();
@@ -25,6 +28,8 @@ public class Practice2 {
         // for, вывести все числа из диапазона между a и b, которые делятся на 5 без остатка, но при этом не делятся
         // на 10 без остатка. Сами числа a и b в диапазоне не учитывать. Если a >= b вывести сообщение "Некорректный
         // ввод".
+        System.out.println();
+        System.out.println("Задание 2");
         System.out.print("Вводим в консоли: ");
         int a = scanner.nextInt();
         int b = scanner.nextInt();
@@ -39,16 +44,22 @@ public class Practice2 {
         }
 
         //3.Реализовать программу No2, используя цикл while.
-        System.out.print("\nВводим в консоли: ");
-        int i1=a+1;
+        System.out.println();
+        System.out.println();
+        System.out.println("Задание 3");
+        System.out.print("Вводим в консоли: ");
         int a1 = scanner.nextInt();
         int b1 = scanner.nextInt();
+        int i1=a1+1;
         System.out.print("Вывод: ");
-        while (i1>a&&i1<b){
+        while (i1>a1&&i1<b1){
             i1=i1+1;
             if (i1%5==0 && i1%10!=0){
                 System.out.print(i1+" ");
             }
+        }
+        if (a1>=b){
+            System.out.println("Неккоректный ввод");
         }
 
         //4. {(x^2-10)/(x+7);  x>=5
@@ -57,7 +68,10 @@ public class Practice2 {
         // Реализовать программу, которая принимает на вход через консоль с помощью класса Scanner, число x. Для этого
         // числа, по формуле выше, необходимо вычислить значение y. (Для этих вещественных чисел x и y необходимо
         // использовать тип double и метод nextDouble() у Scanner’а соответственно, чтобы считать из консоли число x).
-        System.out.print("\nВводим в консоли: ");
+        System.out.println();
+        System.out.println();
+        System.out.println("Задание 4");
+        System.out.print("Вводим в консоли: ");
         double x = scanner.nextDouble();
         double y;
         System.out.print("Вывод: ");

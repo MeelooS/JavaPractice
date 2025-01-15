@@ -1,7 +1,9 @@
+package day1;
+
 public class Practice1 {
     public static void main(String[] args){
         //1.Вывести на экран слово “JAVA”, в строку, чтобы оно повторилось 10 раз, используя цикл while:
-        System.out.println("Задание 1.Цикл while");
+        System.out.println("Задание 1");
         int s = 0;
         while(s<10){
             System.out.print("JAVA ");
@@ -9,14 +11,16 @@ public class Practice1 {
         }
 
         //2.Повторить задание 1, но используя цикл for:
-        System.out.println("\n Задание 2.Цикл for");
+        System.out.println();
+        System.out.println("\n Задание 2");
         for(int s1=0; s1<10; s1++){
             System.out.print("JAVA ");
         }
 
         //3.Вывести на экран слово “JAVA”, в столбик, чтобы оно повторилось 10 раз,используя цикл на ваше усмотрение for
         // или while.
-        System.out.println("\n Задание 3.Цикл for");
+        System.out.println();
+        System.out.println("\n Задание 3");
         for(int s1=0; s1<10; s1++){
             System.out.println("JAVA ");
         }
