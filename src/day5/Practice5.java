@@ -14,6 +14,9 @@ public class Practice5 {
         System.out.println("Машина модели "+car.getModelOfMachine()+", "+car.getColourOfMachine()+" цвета"+", "+
                 car.getYearOfManufacture()+" года выпуска");
 
+//        2.Создать класс Мотоцикл (англ. Motorbike), с полями “Год выпуска”, “Цвет”,“Модель”. Создать экземпляр класса
+//        Мотоцикл, с помощью конструктора (сеттеры не использовать). Придерживаться принципов инкапсуляции и
+//        использовать ключевое слово this. Геттером получить год выпуска, цвет, модель, вывести значения в консоль.
         System.out.println();
         System.out.println("Задание 2");
         Motorbyke motorbyke = new Motorbyke(1980,"black", "Harley-Davidson");
