@@ -14,7 +14,7 @@ public class Teacher {
     }
 
     public void evaluate(Student student){
-        int i= random.nextInt(5)+2;
+        int i= random.nextInt(4)+2;
         if(i==2){
             mark="неудовлетворительно";
         } else if (i==3) {
