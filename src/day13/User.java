@@ -32,10 +32,8 @@ public class User {
     }
 
     public boolean isSubscribed1(User user){               //мой метод
-        for(User user1: subscriptions){
-            if(subscriptions.contains(user1)){
-                return true;
-            }
+        if(subscriptions.contains(user)){
+            return true;
         }
         return false;
     }
