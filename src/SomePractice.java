@@ -1,3 +1,7 @@
+import day13.User;
+
+import java.util.Scanner;
+
 public class SomePractice {
     public static void main(String[] args){
         System.out.println("Hello Java!");
@@ -21,6 +25,38 @@ public class SomePractice {
         byte myByte = -128;//содержит в себе 8 битов информации, т.е. 1 байт = от -128 до 127
         //Ссылочные
         String string = "abc"; //в отличие от char используются двойные кавычки
+
+        //Оператор for each
+//        public boolean isSubscribed(User user){                         //сравнивает все имена из списка subscription c именем, поступившего в качестве аргумента
+//            for (User user1: subscriptions){                            //перебираем каждый i-й элемент(user1) из списка subscription
+//                if(user1.getUsername().equals(user.getUsername())){
+//                    return true;
+//                }
+//            }
+//            return false;
+//        }
+
+        //Пример использования переменной Scanner
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Ваш ввод в консоль: ");
+//        double a = scanner.nextDouble();                                //nextLine/Int/Double - считывает и возвращает данные
+
+
+        //Пример обычного массива
+//        int[] massive1 = new int[100];                             //[100]-размер, []-обычный массив, [][]-двумерный массив
+//        for(int i=0; i< massive1.length; i++){
+//            massive1[i]= random.nextInt(10000);
+//        }
+
+        //Пример двумерного массива
+//        int[][] matrix = new int[12][8];                     //[12]-кол-во строк, [8]-кол-во колонок
+//        for (int i=0; i<matrix.length; i++){
+//            for(int j=0; j<matrix[i].length; j++){
+//                matrix[i][j]= random.nextInt(50);
+//                System.out.print(matrix[i][j]+" ");
+//            }
+//            System.out.println();
+//        }
 
 
     }
