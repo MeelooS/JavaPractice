@@ -75,7 +75,7 @@ public class Practice14 {
                 String line = scanner.nextLine();               //цикл for подходит только для работы с одной строкой,
                 people.add(line);                               //т.е. с массивом
                 String[] person= line.split(" ");         //метод split разделяет строку на подстроки
-                if(Integer.parseInt(person[1])<0){
+                if(Integer.parseInt(person[1])<0){              //nextLine()- считывает и возвращает строку
                     throw new IllegalArgumentException();
                 }
             }
