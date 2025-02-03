@@ -1,5 +1,10 @@
 package day10;
 
+import day17.ChesssPiece;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Practice10 {
     public static void main(String[] args){
         //1.Вам необходимо создать двоичное дерево поиска, изображенное на картинке выше (картинка в файле задания).
@@ -11,8 +16,13 @@ public class Practice10 {
         //рекурсию вывести в консоль все числа из этого двоичного дерева поиска в отсортированном виде. Ваше решение
         //должно работать для любого корректного двоичного дерева поиска. Этому методу необходимо передавать на вход
         //ссылку на корень дерева.
-        Node node = new Node(10);
-        node.setLeftChild(node);
-        System.out.println(node);
+
+        Node root = new Node(20);
+        root.insertNode(5, root);
+        root.insertNode(25, root);
+        root.insertNode(3, root);
+        root.insertNode(30, root);
+
+        Node.recursiveOutput(root);
     }
 }

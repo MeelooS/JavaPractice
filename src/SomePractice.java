@@ -58,6 +58,14 @@ public class SomePractice {
 //            System.out.println();
 //        }
 
+        //Return
+//        public static int recursionSum(int[] ints, int i){          //если метод не void, то return обязан вернуть что-то
+//            if(i==ints.length){                                     //если метод void, то просто return
+//                return 0;                                           //return 0 - если работаем с числами
+//            }                                                       //return null - если работаем с объектами
+//            return (ints[i] + recursionSum(ints, i + 1));
+//        }
+
 
     }
 }
