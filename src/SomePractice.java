@@ -1,5 +1,6 @@
 import day13.User;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class SomePractice {
@@ -63,9 +64,19 @@ public class SomePractice {
 //            if(i==ints.length){                                     //если метод void, то просто return
 //                return 0;                                           //return 0 - если работаем с числами
 //            }                                                       //return null - если работаем с объектами
-//            return (ints[i] + recursionSum(ints, i + 1));
+//            return (ints[i] + recursionSum(ints, i + 1));           //если просто return - выход из метода
 //        }
 
+//        Random random = new Random();
+//        System.out.println(Math.random());
 
+        //break - выход из цикла for,while
+        //continue
+//        for (int i = 1; i <= 7; i++){                                                 //пока i<2 выполнится надпись "я выполняюсь всего 2 раза"
+//            System.out.println(i + ": я выполянюсь перед continue!");                 //когда i>2, то все, что идет после continue будет скипаться и будем переходить к началу цикла
+//            if (i > 2)
+//                continue;
+//            System.out.println("     "+ i + ": я выполянюсь всего два раза");
+//        }
     }
 }
