@@ -15,6 +15,7 @@ public class FinalProject {
         BattleField field1 = new BattleField(battleField1);
         BattleField field11 = new BattleField(battleField11);
         BattleField field12 = new BattleField(battleField12);
+        int i=0;
 
         //Начало игры
         System.out.println("Введите имя первого игрока:");
@@ -28,11 +29,20 @@ public class FinalProject {
         BattleField.createShip2(battleField);
         BattleField.createShip3(battleField);
         BattleField.createShip4(battleField);
+        while(i!=10){
+            System.out.println();
+            i++;
+        }
+
         System.out.println("Игрок "+player1+" расставляет корабли");
         BattleField.createShip1(battleField1);
         BattleField.createShip2(battleField1);
         BattleField.createShip3(battleField1);
         BattleField.createShip4(battleField1);
+        while(i!=10){
+            System.out.println();
+            i++;
+        }
 
 
 
@@ -62,6 +72,10 @@ public class FinalProject {
             Scanner scanner = new Scanner(System.in);
             int x=scanner.nextInt();
             int y=scanner.nextInt();
+            if(x>9 || y>9){
+                System.out.println("Введенные координаты выходят за пределы поля. Введите валидные данные.");
+                continue;
+            }
             System.out.println(currentPlayerName+":"+" "+"Ввели: " + "x:" + x+", " + "y:" + y);
             boolean a= BattleField.shoot(currentPlayerName,currentbattleField1,currentbattleField11,x,y);
             if(a==false){

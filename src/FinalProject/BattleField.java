@@ -14,8 +14,7 @@ public class BattleField {
     }
 
     //Метод для визуализации поля
-    public static void printField(String[][] battleField1){
-        battleField=battleField1;
+    public static void printField(String[][] battleField){
         for (int i=0; i<battleField.length; i++){
             for (int j=0; j<battleField[i].length; j++){
                 System.out.print(battleField[i][j]);
