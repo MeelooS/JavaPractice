@@ -231,10 +231,21 @@ public class BattleField {
     public static boolean shoot(String s, String[][] battleField, String[][] battleField1, int x, int y){
         //s - кто стреляет, battleField - куда стреляет, battleField1 - поле, на котором отображаются попадания и промахи
         // если попадание
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Выберите направление:");
+        System.out.println("1.Вертикальное");
+        System.out.println("2.Горизонтальное");
+        int direction = scanner.nextInt();
         if(battleField[x][y]=="\uD83D\uDEA2"){
             battleField[x][y]="\uD83D\uDFE5";
             battleField1[x][y]="\uD83D\uDFE5";
             System.out.println("Попадание!");
+            if(direction==1 && battleField[x+1][y]=="⬜"){
+                System.out.println("Корабль затоплен!");
+            }
+            if(direction==2 && battleField[x][y+1]=="⬜"){
+                System.out.println("Корабль затоплен!");
+            }
             return true;
         }
         battleField1[x][y]="\uD83D\uDFE6";
