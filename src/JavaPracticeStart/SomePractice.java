@@ -24,7 +24,7 @@ public class SomePractice {
         //Ссылочные
         String string = "abc"; //в отличие от char используются двойные кавычки
 
-        //Оператор for each
+                                              //Оператор for each
 //        public boolean isSubscribed(User user){                         //сравнивает все имена из списка subscription c именем, поступившего в качестве аргумента
 //            for (User user1: subscriptions){                            //перебираем каждый i-й элемент(user1) из списка subscription
 //                if(user1.getUsername().equals(user.getUsername())){
@@ -34,19 +34,19 @@ public class SomePractice {
 //            return false;
 //        }
 
-        //Пример использования переменной Scanner
+                                   //Пример использования переменной Scanner
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.print("Ваш ввод в консоль: ");
 //        double a = scanner.nextDouble();                                //nextLine/Int/Double - считывает и возвращает данные
 
 
-        //Пример обычного массива
+                                           //Пример обычного массива
 //        int[] massive1 = new int[100];                             //[100]-размер, []-обычный массив, [][]-двумерный массив
 //        for(int i=0; i< massive1.length; i++){
 //            massive1[i]= random.nextInt(10000);
 //        }
 
-        //Пример двумерного массива
+                                           //Пример двумерного массива
 //        int[][] matrix = new int[12][8];                     //[12]-кол-во строк, [8]-кол-во колонок
 //        for (int i=0; i<matrix.length; i++){
 //            for(int j=0; j<matrix[i].length; j++){
@@ -56,7 +56,7 @@ public class SomePractice {
 //            System.out.println();
 //        }
 
-        //Return
+                                                  //Return
 //        public static int recursionSum(int[] ints, int i){          //если метод не void, то return обязан вернуть что-то
 //            if(i==ints.length){                                     //если метод void, то просто return
 //                return 0;                                           //return 0 - если работаем с числами
@@ -67,13 +67,18 @@ public class SomePractice {
 //        Random random = new Random();
 //        System.out.println(Math.random());
 
-        //break - выход из цикла for,while
-        //continue
+                                         //break - выход из цикла for,while
+                                                     //continue
 //        for (int i = 1; i <= 7; i++){                                                 //пока i<2 выполнится надпись "я выполняюсь всего 2 раза"
 //            System.out.println(i + ": я выполянюсь перед continue!");                 //когда i>2, то все, что идет после continue будет скипаться и будем переходить к началу цикла
 //            if (i > 2)
 //                continue;
 //            System.out.println("     "+ i + ": я выполянюсь всего два раза");
 //        }
+
+
+                                        //НЕКОТОРЫЕ ПОЛЕЗНЫЕ СОЧЕТАНИЯ КЛАВИШ
+        //ALT+INSERT - вызывает меню для создания конструктора/сеттеров/геттеров
+        //ALT+SHIFT - позволяет редактировать сразу несколько строк
     }
 }
