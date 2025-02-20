@@ -1,4 +1,4 @@
-package JavaPrecticeMiddle.HashCodeAndEquals;
+package JavaPrecticeMiddle.JavaCollections.HashCodeAndEquals;
 
 import java.util.*;
 

@@ -1,6 +1,4 @@
-package JavaPrecticeMiddle.LinkedList;
-
-import JavaPracticeStart.day10.Node;
+package JavaPrecticeMiddle.JavaCollections.LinkedList;
 
 import java.util.Arrays;
 

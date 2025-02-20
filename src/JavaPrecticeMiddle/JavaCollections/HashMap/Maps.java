@@ -1,4 +1,4 @@
-package JavaPrecticeMiddle.HashMap;
+package JavaPrecticeMiddle.JavaCollections.HashMap;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,6 +25,11 @@ public class Maps {
             System.out.println(entry.getKey()+":"+ entry.getValue());          //entrySet - возвращает набор всех пар ключ-значение нашей map
             //        getKey - получает ключ      getValue - получает значение ключа
         }
+
+        //HashSet реализует интерфейс HashMap. В HashSet и есть данные из HashMap(т.е. пара ключ-значение), но с отсеченной частью значение, т.е. можно сказать,
+        //что в HashSet'e хранятся только ключи из HashMap'a
+
+        //Map - массив из LinkedList'ов
     }
 
 }

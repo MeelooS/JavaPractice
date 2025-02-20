@@ -1,4 +1,4 @@
-package JavaPrecticeMiddle.HashCodeAndEquals;
+package JavaPrecticeMiddle.JavaCollections.HashCodeAndEquals;
 
 public class HashCodeAndEquals1 {
     public static void main(String[] args){

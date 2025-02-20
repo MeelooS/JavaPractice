@@ -1,4 +1,4 @@
-package JavaPrecticeMiddle.HashMap;
+package JavaPrecticeMiddle.JavaCollections.HashMap;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

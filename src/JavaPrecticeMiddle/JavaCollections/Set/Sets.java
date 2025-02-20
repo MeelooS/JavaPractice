@@ -1,4 +1,4 @@
-package JavaPrecticeMiddle.Set;
+package JavaPrecticeMiddle.JavaCollections.Set;
 
 import java.util.*;
 
@@ -66,5 +66,8 @@ public class Sets {
         Set<Integer> difference = new HashSet<>(hashSet);
         difference.removeAll(hashSet1);                        //remove - удаляет все элементы из difference, которые есть в hashSet1
         System.out.println(difference);
+
+        //HashSet реализует интерфейс HashMap. В HashSet и есть данные из HashMap(т.е. пара ключ-значение), но с отсеченной частью значение, т.е. можно сказать,
+        //что в HashSet'e хранятся только ключи из HashMap'a
     }
 }
