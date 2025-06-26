@@ -84,7 +84,7 @@ public class SomePractice {
 
         /*
 
-                                                    //СТРОКИ (КОНКАТЕНАЦИЯ И STRINGBUILDER)
+                                                     //СТРОКИ (КОНКАТЕНАЦИЯ И STRINGBUILDER)
         Конкатенация(объеденение строк) и StringBuilder
         str=str.append(k).append(" "); - StringBuilder , аналогично str = str+k+" ";
 
