@@ -27,7 +27,7 @@ from(
 select  e.emp_id, l.loc_name, e.group_id
 from employee as e join location as l
 ON e.loc_id = l.loc_id
-)
+) as q
 where loc_name = 'Водный';
 
                         --Вывести кол-во сотрудников в каждой из локаций, где сотрудников больше 3.
@@ -47,12 +47,30 @@ select l.loc_id, l.loc_name, count(e.emp_id) as count_emp
 from employee as e join location as l
 on e.loc_id = l.loc_id
 group by l.loc_id, l.loc_name
-)
+) as q
 where count_emp>3
 
                          --Вывести вторую минимальную зарплату в организации по каждому отделу (group_id) среди всех сотрудников.
                                                      --В выводе должно быть: group_id, salary
 
+CREATE TABLE db.employee (
+emp_id int,
+loc_id int,
+salary numeric(10,2),
+group_id int,
+b_dt date);
+
+SELECT
+    group_id,
+    salary
+FROM (
+    SELECT
+        group_id,
+        salary,
+        ROW_NUMBER() OVER (PARTITION BY group_id ORDER BY salary) AS rn
+    FROM db.employee
+) sub
+WHERE rn = 2;
 
 
 

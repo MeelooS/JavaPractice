@@ -1,5 +1,6 @@
 package JavaPracticeStart.day11.Interface;
 
+
 public class Practice11 {
     public static void main(String[] args){
         //1.На складе происходит сборка и упаковка интернет-заказа.
@@ -23,22 +24,59 @@ public class Practice11 {
         //- Создать второй склад, также принять по 1 сотруднику с однократным вызовом doWork() у каждого.
         //- Проконтролировать, что у склада 1 и его сотрудников при этом значения не меняются.
         System.out.println("Задание 1");
-        Picker picker = new Picker();
-        Courier courier = new Courier();
         Warehouse warehouse = new Warehouse();
+        Warehouse warehouse1 = new Warehouse();
+        Picker picker = new Picker();
+        Picker picker1 = new Picker();
+        Courier courier = new Courier();
+        Courier courier1 = new Courier();
 
         picker.setWarehouse(warehouse);
         courier.setWarehouse(warehouse);
 
-        System.out.println(warehouse+ " "+ ", "+picker+ ", "+ courier);
+        System.out.println("Доход от доставленных заказов составляет " + warehouse.getBalance());
+        System.out.println("Кол-во собранных заказов равно " + warehouse.getCountOrder());
+        System.out.println("Picker "+picker.getSalary());
+        System.out.println("Courier "+courier.getSalary());
 
-        for (int i=0; i<=1500; i++){
+        for(int i=1; i<=1500; i++){
             picker.doWork();
-            courier.doWork();
+            picker.bonus();
         }
-        System.out.println(warehouse+ " "+ ", "+picker+ ", "+ courier);
-        picker.bonus();
-        courier.bonus();
-        System.out.println(warehouse+ " "+ ", "+picker+ ", "+ courier);
+
+        while (warehouse.getBalance()<=2000){
+            courier.doWork();
+            courier.bonus();
+        }
+
+        System.out.println();
+        System.out.println("Доход от доставленных заказов составляет " + warehouse.getBalance());
+        System.out.println("Кол-во собранных заказов равно " + warehouse.getCountOrder());
+        System.out.println("Picker "+picker.getSalary());
+        System.out.println("Courier "+courier.getSalary());
+
+        System.out.println();
+        System.out.println();
+
+
+
+
+
+        picker1.setWarehouse(warehouse1);
+        courier1.setWarehouse(warehouse1);
+
+        System.out.println("Доход от доставленных заказов составляет " + warehouse1.getBalance());
+        System.out.println("Кол-во собранных заказов равно " + warehouse1.getCountOrder());
+        System.out.println("Picker "+picker1.getSalary());
+        System.out.println("Courier "+courier1.getSalary());
+
+        picker1.doWork();
+        courier1.doWork();
+
+        System.out.println();
+        System.out.println("Доход от доставленных заказов составляет " + warehouse1.getBalance());
+        System.out.println("Кол-во собранных заказов равно " + warehouse1.getCountOrder());
+        System.out.println("Picker "+picker1.getSalary());
+        System.out.println("Courier "+courier1.getSalary());
     }
 }

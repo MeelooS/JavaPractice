@@ -2,25 +2,26 @@ package JavaPracticeStart.day11.Interface;
 
 public class Warehouse{
     private int countOrder;
-    private int balance;
+    private double balance;
 
-    public void setCountOrder(int countOrder){
-        this.countOrder=countOrder;
-    }
-    public int getCountOrder(){
+    public int getCountOrder() {
         return countOrder;
     }
 
-    public void setBalance(int balance) {
-        this.balance = balance;
-    }
-
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
+    public void setCountOrder(int countOrder) {
+        this.countOrder = countOrder;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
     public String toString(){
-        return("Кол-во собранных заказов: "+countOrder+", "+"доход от доставленных заказов: "+balance);
+        return ("Кол-во собранных заказов равно "+countOrder+" ,"+"доход от доставленных заказов составляет "+balance);
     }
 
 }

@@ -1,34 +1,30 @@
 package JavaPracticeStart.day11.Interface;
 
-public class Courier implements Worker{
-    private float salary = 0;
-    private Warehouse warehouse;        //ссылка на объект класса Warehouse
 
+public class Courier implements Worker{
+    private double salary;
+    Warehouse warehouse;
+
+
+    //этот метод нужен для того, чтобы в аргументах указывать нужный созданный склад. Иначе при компиляции будет ошибка, т.к. машине непонятно, с каким объектом склада мы работаем, т.к. мы можем создать несколько объектов склада
     public void setWarehouse(Warehouse warehouse) {
         this.warehouse = warehouse;
     }
-
-    public float getSalary() {
+    public double getSalary(){
         return salary;
     }
 
+    @Override
     public void doWork() {
-        salary = salary+100;
+        salary+=100;
         warehouse.setBalance(warehouse.getBalance()+1000);
     }
 
     @Override
     public void bonus() {
-        if(warehouse.getBalance()>1000000){
+        if(warehouse.getBalance()==3000){
             salary=salary*2;
         }
-//        else{
-//            doWork();
-//        }
-    }
-
-    public String toString(){
-        return("Courier {"+"courier: "+salary+"}");
     }
 
 }

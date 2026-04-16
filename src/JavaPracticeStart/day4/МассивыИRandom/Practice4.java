@@ -110,21 +110,23 @@ public class Practice4 {
         System.out.println();
         System.out.println("Задание 3");
         int[][] matrix = new int[12][8];
+        //внешний цикл итерируется(перебирается) по строкам
         for (int i=0; i<matrix.length; i++){
+            //внутренний цикл - проходим по столбцам i-й строки
             for(int j=0; j<matrix[i].length; j++){
                 matrix[i][j]= random.nextInt(50);
-                System.out.print(matrix[i][j]+" ");
+                System.out.print(matrix[i][j]+"\t");               // \t- горизонтальный отступ, эквивалентный нажатию на Tab (табуляция)
             }
             System.out.println();
         }
         int maxSum =0;
         int index = 0;
         for(int i=0; i<matrix.length; i++){
-            int sum2 = 0;
+            int sum2 = 0; //сумма i-строки, по которой проходим
             for(int j=0; j<matrix[i].length; j++){
                 sum2 = sum2 + matrix[i][j];
             }
-            if(maxSum<sum2){
+            if(maxSum<=sum2){
                 maxSum=sum2;
                 index=i;
             }
