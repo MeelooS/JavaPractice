@@ -1,4 +1,4 @@
-package Задачи;
+package Задачи.SBR;
 
 public class Task7 {
     public static void main(String[] args){

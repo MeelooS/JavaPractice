@@ -1,4 +1,4 @@
-package Задачи;
+package Задачи.SBR;
 
 import java.util.ArrayList;
 import java.util.List;

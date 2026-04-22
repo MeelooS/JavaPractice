@@ -41,7 +41,7 @@ public class Task4 {
         romanToInt("MCMXCIV");  //1000+900+90+4=1994
     }
 
-    
+
     public static void romanToInt(String s) {   //III
         int sum=0;
         int podSum=0;
