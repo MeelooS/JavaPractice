@@ -10,7 +10,7 @@ public class T9 {
 
     public static void main(String[] args){
 
-//        System.out.println(QQQ("Qwert"));
+//        System.out.println(ert("Qwert"));
     }
 
     public static void reverse(String str){
@@ -25,6 +25,4 @@ public class T9 {
         }
         System.out.println(str1);
     }
-
-
 }

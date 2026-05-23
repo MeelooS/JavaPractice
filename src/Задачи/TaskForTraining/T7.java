@@ -17,33 +17,20 @@ public class T7 {
      */
 
     public static void main(String[] args){
-//        System.out.println(QQQ(123));
+        sum(88);
 
     }
 
-    public static int QQQ(int u){
-        String str = String.valueOf(u);
-        int[] arr=new int[str.length()];
+    public static void sum(int q){
+        String str = String.valueOf(q);
+        List<String> list = new ArrayList<>();
         for(int i=0; i<str.length(); i++){
-            arr[i]=Integer.parseInt(String.valueOf(str.charAt(i)));
+            list.add(String.valueOf(str.charAt(i)));
         }
         int sum=0;
-        for(int i=0; i< arr.length; i++){
-            sum+=arr[i];
+        for(String aa: list){
+            sum+=Integer.parseInt(aa);
         }
-        return sum;
-    }
-
-    public static int sum(int g){
-        String stringG=String.valueOf(g);
-        List<String> list = new ArrayList<>();
-        int result=0;
-        for (int i=0; i<stringG.length(); i++){
-            list.add(String.valueOf(stringG.charAt(i)));
-        }
-        for (int z=0; z< list.size(); z++){
-            result=result+Integer.parseInt(list.get(z));
-        }
-        return result;
+        System.out.println(sum);
     }
 }

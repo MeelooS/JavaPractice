@@ -7,9 +7,8 @@ public class T4 {
 
     public static void main(String[] args){
 
-//        System.out.println(fact(4));
-//        System.out.println(fact(5));
-
+        System.out.println(recursiveFactorial(4));
+        System.out.println(recursiveFactorial(5));
 
     }
 
@@ -28,8 +27,4 @@ public class T4 {
         }
         return h*recursiveFactorial(h-1);  //вернули значение, но не выходим, т.к. тут рекурсия
     }
-
-
-
-
 }

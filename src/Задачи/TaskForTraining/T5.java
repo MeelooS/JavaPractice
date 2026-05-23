@@ -38,8 +38,8 @@ public class T5 {
         list.add("Собака");
         list.add("Медведь");
 
-        System.out.println(noDuplicate(list));
-        System.out.println(noDuplicate1(list));
+//        System.out.println(ert(list));
+//        System.out.println(noDuplicate1(list));
 
                                        //Реализация через StreamAPI №1
         Stream stream = list.stream();
@@ -58,6 +58,7 @@ public class T5 {
                                        //Реализация через StreamAPI №2
         List<String> list2 = List.of("Кошка", "Кошка", "Собака", "Медведь");
         Set<String> set = new HashSet<>();
+        // Оставляет только те, что добавились в set. Метод set.add(x) - возвращает true, если элемент не был добавлен и false если уже был добавлен
         List<String> listNoDuplicate1= list2.stream().filter(x-> set.add(x)).collect(Collectors.toList());
         System.out.println(listNoDuplicate1);
     }

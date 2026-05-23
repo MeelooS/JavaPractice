@@ -7,10 +7,10 @@ public class T2 {
 
     public static void main(String[] args){
 
-//        System.out.println(polina("шалаш"));
-//        System.out.println(polina("Бооб"));
-//        System.out.println(polina("молодец"));
-//        System.out.println(polina("мооролырвм"));
+        System.out.println(polindrom("шалаш"));
+        System.out.println(polindrom("Бооб"));
+        System.out.println(polindrom("молодец"));
+        System.out.println(polindrom("мооролырвм"));
 
 
     }
@@ -43,10 +43,9 @@ public class T2 {
         return false;
     }
 
-    public static boolean polindrom1(String p){
-        String newStr = p.toLowerCase();
-        for(int i=0; i<=(p.length()-1)/2; i++){
-            if(newStr.charAt(i)!=newStr.charAt(p.length()-1-i)){
+    public static boolean polindrom1(String string){
+        for(int i=0; i<string.length()-1; i++){
+            if(string.toLowerCase().charAt(i)!=string.toLowerCase().charAt(string.length()-1-i)){
                 return false;
             }
         }
@@ -61,7 +60,4 @@ public class T2 {
         }
         return false;
     }
-
-
-
 }
