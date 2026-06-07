@@ -13,8 +13,6 @@ b_dt date);
 
                         -- Вывести всех сотрудников emp_id с локации Водный (loc_name = ‘Водный’).
                                       -- В выводе должно быть emp_id, loc_name, group_id.
-
-
 --JOIN
 SELECT e.emp_id, l.loc_name, e.group_id
 from employee as e join location as l
@@ -69,7 +67,7 @@ FROM (
         salary,
         ROW_NUMBER() OVER (PARTITION BY group_id ORDER BY salary) AS rn
     FROM db.employee
-) sub
+) as sub
 WHERE rn = 2;
 
 

@@ -15,11 +15,9 @@ public class Sob2 {
 
     public static void main(String[] args) {
 
-        int [] array = {1,2,3,7,8,9};
-        int [] array1 = {1,2,4,5,6,10};
-        int [] array2 = {1,2,4,5,11,10};
+        int [] array = {1,2,4,5,6,10};
 
-        test1(array1);
+        test1(array);
     }
 
 
@@ -84,6 +82,5 @@ public class Sob2 {
         }
         return false;
     }
-
 
 }

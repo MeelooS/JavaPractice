@@ -2,27 +2,11 @@ package Задачи.SBR;
 
 public class Sob1 {
     public static void main(String[] args){
-//        System.out.println(repeatWord("Тест", "О", 3)); // "ТестОТестОТест"
-//        System.out.println(repeatWord("Java", "И", 2)); // "JavaИJava"
-//        System.out.println(repeatWord("Java", "И", 1)); // "Java"
-//        System.out.println(repeatWord("Java", "И", 0)); // ""
-//
-//        System.out.println();
-//        System.out.println();
 
-        Sob1.raz("Java", "И", 3);
-        Sob1.raz("Java", "И", 2);
-        Sob1.raz("Java", "И", 1);
-        Sob1.raz("Java", "И", 0);
-
-        System.out.println();
-
-        System.out.println(razd("Java", "И", 3));
-        System.out.println(razd("Java", "И", 2));
-        System.out.println(razd("Java", "И", 1));
-        System.out.println(razd("Java", "И", 0));
-
-
+        System.out.println(repeatWord("Java", "И", 3));
+        System.out.println(repeatWord("Java", "И", 2));
+        System.out.println(repeatWord("Java", "И", 1));
+        System.out.println(repeatWord("Java", "И", 0));
 
     }
     /*Написать функцию, которая принимает на вход строку word, строку separator и число count.
@@ -34,7 +18,7 @@ public class Sob1 {
     ("Java", "И", 0) → ""
      */
 
-    public static String razd(String word, String separator, int count){
+    public static String repeatWord(String word, String separator, int count){
         String a="";
         if (count==0){
             return "";
@@ -49,20 +33,7 @@ public class Sob1 {
         return a;
     }
 
-    public static void raz(String word, String separator, int count) {
-        if (count == 0) {
-            System.out.println("");
-        }
-        for (int i = 0; i < count; i++) {
-            System.out.print(word);
-            if (i < count - 1) {               //если не последний, добавляется separator
-                System.out.print(separator);
-            }
-        }
-        System.out.println();
-    }
-
-    public static String repeatWord(String word, String separator, int count) {
+    public static String repeatWord1(String word, String separator, int count) {
         if (count == 0) {
             return "\" \"";
         }

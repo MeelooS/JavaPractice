@@ -21,9 +21,6 @@ public class Sob4 {
         list.add("b");
         list2.add("c");
 
-        /*
-        Можно просто обойтись System.out.println(list) и System.out.println(list2), т.к.
-         */
         System.out.println(Arrays.toString(list.toArray()));
         System.out.println(Arrays.toString(list2.toArray()));
 
